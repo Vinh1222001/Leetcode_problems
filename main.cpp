@@ -1,5 +1,13 @@
 #include "main.h"
 
+// string test_case_folder="";
+// unsigned int test_case_len=0;
+
+// vector<string> test_cases;
+// vector<string> output_expectations;
+
+// int read_test_case();
+
 int main(int argc, char *argv[]){
 
     unsigned int problem_id = stoi(argv[1]);
@@ -138,11 +146,39 @@ int main(int argc, char *argv[]){
     }else{
         cout << "You enter wrong parameter!\nPlese run again and try another parameter."<< endl;
     }
-    
-    
-    
 
-
+    // test_case_folder = "Valid_Parentheses";
+    // read_test_case();
 
     return 1;
 }
+
+// int read_test_case(){
+
+//     ifstream file_test_case("./"+ test_case_folder + "/test_case.txt");
+//     if(!file_test_case.is_open()){
+//         cout << "Can not open file!" << endl;
+//         return 0;
+//     }
+    
+//     cout << "File is opening" << endl;
+
+//     int test_case_len;
+//     file_test_case >> test_case_len;
+//     cout << "Test case length: "<< test_case_len << endl;
+
+//     string temp_test_case;
+//     for (int i = 0; i < test_case_len; i++)
+//     {
+
+//         file_test_case >> temp_test_case;
+//         test_cases.push_back(temp_test_case);
+        
+//         file_test_case >> temp_test_case;
+//         output_expectations.push_back(temp_test_case);
+//     }    
+
+//     file_test_case.close();
+
+//     return 1;
+// }
