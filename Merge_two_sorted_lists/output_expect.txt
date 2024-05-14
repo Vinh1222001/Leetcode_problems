@@ -1,0 +1,7 @@
+You entered problem id = 6
+You are viewing MERGE_TWO_SORTED_LIST problem
+Difficult Level: EASY
+
+1 1 2 3 4 4
+0
+0

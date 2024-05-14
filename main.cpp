@@ -143,10 +143,20 @@ int main(int argc, char *argv[]){
             printf("\n\n");
         }
 
+    }else if(problem_id == VIEW_MERGE_TWO_SORTED_LIST){
+        cout << "You are viewing MERGE_TWO_SORTED_LIST problem" << endl;
+        cout << "Difficult Level: EASY\n\n";
+        
+        problem.test_MergeTwoLists();
+
     }else{
         cout << "You enter wrong parameter!\nPlese run again and try another parameter."<< endl;
     }
 
+    int* a = nullptr;
+    int* b = nullptr;
+
+    cout << (b==a) << endl;
     // test_case_folder = "Valid_Parentheses";
     // read_test_case();
 
