@@ -1,7 +1,5 @@
 #include "../main.h"
 
-int count = 0;
-
 void insertNode(ListNode *list, int value){
 
     ListNode* newNode = new ListNode(value);
@@ -17,8 +15,6 @@ void insertNode(ListNode *list, int value){
     }
 
     walk->next = newNode;
-
-    cout << "insert node "<< count++ << endl;
 }
 
 void popNode(){
@@ -37,10 +33,11 @@ void printList(ListNode* list){
 
     while(walk != nullptr){
 
-        cout << "value: " << walk->val << endl;
+        cout << walk->val << " ";
         walk = walk->next;
 
     }
+    cout << "\n";
 }
 
 ListNode* mergeTwoLists(ListNode* list1, ListNode* list2){
@@ -49,99 +46,39 @@ ListNode* mergeTwoLists(ListNode* list1, ListNode* list2){
 }
 
 void Solution::test_MergeTwoLists(){
-    
-    vector<vector<ListNode*>> test_cases;
 
-    vector<ListNode*> op_expect;
+    vector<ListNode*> lists;
 
-    string file_name="./Merge_two_sorted_lists/test_case.txt";
-    ifstream file;
-    file.open(file_name.c_str(), ios_base::in);
+    for (int i = 0; i < 2; i++)
+    {
+        int len;
 
-    if(!file.is_open()){
+        cin >> len;
 
-        cerr << "Can not open test cases file!" << endl;
+        ListNode* list;
 
-        if (file.fail()) { 
-
-            cerr << "Error details: " << strerror(errno) << endl; 
-        } 
-        return;
-    }
-
-    cout << "test_case.txt is opening! \n";
-
-    unsigned test_case_len;
-
-    file >> test_case_len;
-
-    for(int i=0; i < test_case_len; i++){
-        int input_list_len;
-
-        vector<ListNode*> input_list;
-
-        for (int list_idx = 0; list_idx < 2; list_idx++)
+        for (int j = 0; j < len; j++)
         {
-            file >> input_list_len;
-            ListNode* temp_list = nullptr;
-            if (input_list_len > 0)
+            int value;
+
+            cin>>value;
+            if (j<=0)
             {
-                for (int j = 0; j < input_list_len; j++)
-                {
-                    int value;
-                    file >> value;
-                    if(j<=0) {
-                    
-                        temp_list = new ListNode(value);
-
-                    }else{
-
-                        insertNode(temp_list, value);
-                    }
-                }
-            }
+                list = new ListNode(value);
             
-            input_list.push_back(temp_list);
-        }        
-        test_cases.push_back(input_list);
-
-        int output_list_len;
-        file >> output_list_len;
-        ListNode* output_list= nullptr;
-
-        if(output_list_len > 0){
-            for (int j = 0; j < output_list_len; j++)
-            {
-                int value;
-
-                file >> value;
-
-                if(j<=0) {
-                
-                    output_list = new ListNode(value);
-
-                }else{
-
-                    insertNode(output_list, value);
-                    cout << "j = " << j << endl;
-                }
+            }else{
+                insertNode(list, value);
             }
             
         }
 
-        op_expect.push_back(output_list);
-
+        lists.push_back(list);
     }
 
-    for (int i = 0; i < count; i++)
-    {
-        printList(test_cases[i][0]);
-    
-        printList(test_cases[i][1]);
+    // printList(lists[0]);    
+    // printList(lists[1]);
 
-        printList(op_expect[i]);
-    }
-    
+    ListNode* result= mergeTwoLists(lists[0],lists[1]);    
+    printList(result);
 
-    file.close();
 }

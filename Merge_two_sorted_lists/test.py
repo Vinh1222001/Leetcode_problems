@@ -7,7 +7,10 @@ json_file = open("unittest.json")
 data = json.load(json_file)
 
 list1 = data['problem']["unittest"]["test_cases"][0]["input"]["list1"]
-print(list1)
+list2 = data['problem']["unittest"]["test_cases"][0]["input"]["list2"]
+
+input =list1 + " " +list2
+# print(list1)
  
 # Closing file
 json_file.close()
@@ -16,18 +19,18 @@ class TestMainProgram(unittest.TestCase):
 
     def setUp(self):
         print("Compiling main.exe...")
-        move_out = subprocess.Popen(["cd.."],shell=True)
-        move_out.wait()
+        # move_out = subprocess.Popen(["cd.."],shell=True)
+        # move_out.wait()
 
         # print(process.returncode)
-        process = subprocess.run(["mingw32-make", "main"], shell=True, check = True)
+        process = subprocess.run(["mingw32-make", "main"],cwd="../", shell=True, check = True)
 
 
         
 
     def test_output(self):
 
-        result = subprocess.run(["../main","6"],input=list1)
+        result = subprocess.run(["../main","6"],input=input.encode())
 
         # for input_args, input_data, expected_output in test_cases:
         #     with self.subTest(input_args=input_args, input_data=input_data):
