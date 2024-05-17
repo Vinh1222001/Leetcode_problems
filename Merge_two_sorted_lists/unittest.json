@@ -1,13 +1,26 @@
 {
-    "somthing":[
-        {
-            "unittest": "test1",
+    "problem": {
+        "id":"6",
+        "name":"Merge two sorted lists",
+        "unittest":{
+            "test_case_len": 3,
             "test_cases":[
                 {
-                    "input": "3 0 1",
-                    "output": "2 1 0"
+                    "input":{
+                        "list1":[1,2,4],
+                        "list2":[1,3,4]
+                    },
+                    "output":[1,1,2,3,4,4]
+                },
+                {
+                    "input":"",
+                    "output":""
+                },
+                {
+                    "input":"",
+                    "output":""
                 }
             ]
         }
-    ]
+    }
 }
