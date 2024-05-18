@@ -11,25 +11,12 @@
 int main(int argc, char *argv[]){
 
     unsigned int problem_id = stoi(argv[1]);
-    cout << "You entered problem id = " << problem_id << endl;
+    // cout << "You entered problem id = " << problem_id << endl;
 
     Solution problem;
 
     if(problem_id == VIEW_TWO_SUM_PROBLEM){
-
-        cout << "You are viewing TWO SUM problem" << endl;
-        cout << "Difficult Level: EASY\n\n";
-
-        vector<int> nums = {0,4,3,0};
-        int target = 0;
-        vector<int> result = problem.twoSum(nums,target);
-        if(result.size()>=2){
-
-            cout << result.at(0) << " " << result.at(1) << endl;
-        
-        }else{
-            cout << "Result is not found!" << endl;
-        }
+        problem.test_TwoSum();
 
     }else if(problem_id == VIEW_LONGEST_COMMON_PREFIX_PROBLEM){
 
@@ -144,8 +131,6 @@ int main(int argc, char *argv[]){
         }
 
     }else if(problem_id == VIEW_MERGE_TWO_SORTED_LIST){
-        cout << "You are viewing MERGE_TWO_SORTED_LIST problem" << endl;
-        cout << "Difficult Level: EASY\n\n";
  
         problem.test_MergeTwoLists();
 

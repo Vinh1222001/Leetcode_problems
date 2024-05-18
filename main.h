@@ -46,7 +46,7 @@ class Solution
 
     public:
 
-        vector<int> twoSum(vector<int>& nums, int target);
+        void test_TwoSum();
         int         romanToInt(string s);
         bool        isPalindrome(int x);
         string      longestCommonPrefix(vector<string>& strs);

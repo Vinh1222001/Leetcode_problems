@@ -5,7 +5,7 @@ RED_STR = "\x1b[31;20m"
 GREEN_STR = "\x1b[32;20m"
 RESET_COLOR_STR= "\x1b[0m"
 
-json_file = open("./Merge_two_sorted_lists/unittest.json")
+json_file = open("./Two_sum/unittest.json")
 
 data = json.load(json_file)
 test_cases = data['problem']["unittest"]["test_cases"]
@@ -21,9 +21,9 @@ def testCase():
     print(f"There are {GREEN_STR}{test_case_len}{RESET_COLOR_STR} test case in this unittest\n")
     for index, test_case in enumerate(test_cases):
     
-        list1 = test_case["input"]["list1"]
-        list2 = test_case["input"]["list2"]
-        input_data =list1 + " " +list2
+        nums = test_case["input"]["nums"]
+        target = test_case["input"]["target"]
+        input_data =nums + " " +target
 
         output_expect=test_case["output"]
         # print(input_data)
@@ -37,6 +37,6 @@ def testCase():
         else:
             print(GREEN_STR+"OK\n"+RESET_COLOR_STR)
         
-        print(f"\tInput: list1 = [{list1}], list2 = [{list2}]\n")
+        print(f"\tInput: nums = [{nums}], target = [{target}]\n")
         print(f"\tOutput expectation: [{output_expect}]\n")
         print(f"\tYour output: [{result.stdout}]\n")

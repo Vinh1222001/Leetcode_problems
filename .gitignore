@@ -31,4 +31,8 @@
 *.out
 *.app
 
+#python
+.idea
+._pycache
+
 .vscode
