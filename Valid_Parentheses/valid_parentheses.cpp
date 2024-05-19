@@ -1,6 +1,6 @@
 #include "../main.h"
 
-bool Solution::isValid(string s){
+bool isValid(string s){
     
     if(s[0] == ')') return false;
     if(s[0] == ']') return false;
@@ -46,4 +46,10 @@ bool Solution::isValid(string s){
     
 
     return false;
+}
+
+void Solution::test_ValidParentheses(){
+    string s;
+    cin >> s;
+    cout << (isValid(s)?"true":"false");
 }

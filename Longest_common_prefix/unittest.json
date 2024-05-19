@@ -1,0 +1,23 @@
+{
+    "problem": {
+        "id":"1",
+        "name":"Longest common prefix",
+        "unittest":{
+            "test_case_len": 2,
+            "test_cases":[
+                {
+                    "input":{
+                        "strs":"3 flower flow flight"
+                    },
+                    "output":"fl"
+                },
+                {
+                    "input":{
+                        "strs":"3 dog racecar car"
+                    },
+                    "output":""
+                }
+            ]
+        }
+    }
+}

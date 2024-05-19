@@ -1,0 +1,29 @@
+{
+    "problem": {
+        "id":"2",
+        "name":"Palindrome number",
+        "unittest":{
+            "test_case_len": 3,
+            "test_cases":[
+                {
+                    "input":{
+                        "x": "121"
+                    },
+                    "output":"true"
+                },
+                {
+                    "input":{
+                        "x": "-121"
+                    },
+                    "output":"false"
+                },
+                {
+                    "input":{
+                        "x": "10"
+                    },
+                    "output":"false"
+                }
+            ]
+        }
+    }
+}

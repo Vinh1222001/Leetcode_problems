@@ -1,6 +1,17 @@
 #include "../main.h"
 
-int Solution::romanToInt(string s){
+int baseRomanToInt(char s){
+    if(s == 'I') return 1;
+    if(s == 'V') return 5;
+    if(s == 'X') return 10;
+    if(s == 'L') return 50;
+    if(s == 'C') return 100;
+    if(s == 'D') return 500;
+    if(s == 'M') return 1000;
+    return -1;
+}
+
+int romanToInt(string s){
     int curr_letter_idx= s.length() - 1;
 
     int result = 0;       
@@ -19,4 +30,10 @@ int Solution::romanToInt(string s){
         curr_letter_idx--;
     }
     return result;
+}
+
+void Solution::test_RomanToInterger(){
+    string s;
+    cin >> s;
+    cout << romanToInt(s);
 }

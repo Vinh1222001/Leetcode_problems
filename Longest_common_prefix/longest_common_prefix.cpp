@@ -1,6 +1,6 @@
 #include "../main.h"
 
-string Solution::longestCommonPrefix(vector<string>& strs) {
+string longestCommonPrefix(vector<string>& strs) {
     string result="";
     string prefix = "";
     bool no_com_prefix_flag = true;
@@ -32,3 +32,18 @@ string Solution::longestCommonPrefix(vector<string>& strs) {
 
     return result;
 } 
+
+void Solution::test_LongestCommonPrefix(){
+    
+    vector<string> strs;
+    int input_len;
+    cin >> input_len;
+    for (int i = 0; i < input_len; i++)
+    {
+        string value;
+        cin >> value;
+        strs.push_back(value);
+    }
+    cout << longestCommonPrefix(strs);
+
+}

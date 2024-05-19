@@ -1,0 +1,29 @@
+{
+    "problem": {
+        "id":"5",
+        "name":"Valid Parentheses",
+        "unittest":{
+            "test_case_len": 3,
+            "test_cases":[
+                {
+                    "input":{
+                        "s": "()"
+                    },
+                    "output":"true"
+                },
+                {
+                    "input":{
+                        "s": "()[]{}"
+                    },
+                    "output":"true"
+                },
+                {
+                    "input":{
+                        "s": "(]"
+                    },
+                    "output":"false"
+                }
+            ]
+        }
+    }
+}

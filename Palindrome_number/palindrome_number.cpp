@@ -1,8 +1,8 @@
 #include "../main.h"
 
-bool Solution::isPalindrome(int x) {
+bool isPalindrome(int x) {
 
-    cout<< endl << endl << "Test case x = "<< x <<endl; 
+    // cout<< endl << endl << "Test case x = "<< x <<endl; 
     if( x >= 0  && x <10 ) return true;
 
     if(x < 0) return false;
@@ -36,4 +36,11 @@ bool Solution::isPalindrome(int x) {
     if(x == reversed_x) return true;
     return false;
     
+}
+
+void Solution::test_PalindromeNumber(){
+
+    string x;
+    cin >> x;
+    cout << (isPalindrome(stoi(x))?"true":"false"); 
 }
