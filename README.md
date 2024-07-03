@@ -51,9 +51,11 @@ Be sure your terminal is in right folder.
 
 Then run the command line below to compile program
 
-    python <problem_id>
+    python testing.py
 
-Which problem_id is ID of the problem you want to view result. To know what id of problem, please go to Problem ID section or click [here](#problem-id)
+Then, You can see `Enter problem ID:` in terminal. You need to enter which problem's ID you want to view result.
+
+To know what id of problem, please go to Problem ID section or click [here](#problem-id)
 
 ## 4. Problem ID Table <a id="problem-id"></a>
 The table below contain Problem information. You can find out their ID, Problem name, Difficult level, Runtime and Memory. About Runtime and Memory columns, These show you the runtime and memory of my scripts need to solve the problem.
@@ -65,3 +67,4 @@ The table below contain Problem information. You can find out their ID, Problem 
 |   4       |Two sum                    |Easy               |433 ms (Beats 5.02% of users)  |12.66 MB (Beats 73.63% of users)   |
 |   5       |Valid Parentheses          |Easy               |3 ms (Beats 41.9% of users)    |7.50 MB (Beats 85.89% of users)    |
 |   6     | Merge two sorted lists      |Esay |5ms(Beats 48.88% of users)|18.5 MB (Beats 13.86% of users)|
+|   7   |   Add two numbers |   Medidum |   15 ms (Beats 87.82%)    |    76.06 MB (Beats 63.45%)   |

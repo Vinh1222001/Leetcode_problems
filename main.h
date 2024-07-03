@@ -21,6 +21,8 @@ using namespace std;
 
     #define VIEW_MERGE_TWO_SORTED_LIST          6
 
+    #define VIEW_ADD_TWO_NUMBERS                7
+
 #pragma endregion
 
 struct ListNode {
@@ -35,7 +37,7 @@ class Solution
     // private:
     public:
 
-        void test_TwoSum();
+        void        test_TwoSum();
         // int         romanToInt(string s);
         void        test_RomanToInterger();
         // bool        isPalindrome(int x);
@@ -46,6 +48,8 @@ class Solution
         void        test_ValidParentheses();
         // ListNode*   mergeTwoLists(ListNode* list1, ListNode* list2);
         void        test_MergeTwoLists();
+
+        void        test_AddTwoNumber();
         Solution(/* args */){}
         ~Solution(){}
 };

@@ -26,6 +26,11 @@ int main(int argc, char *argv[]){
         case VIEW_MERGE_TWO_SORTED_LIST:
             problem.test_MergeTwoLists();
             break;
+
+        case VIEW_ADD_TWO_NUMBERS:
+            problem.test_AddTwoNumber();
+            break;
+            
         default:
             std::cout << "You enter wrong parameter!\nPlease run again and try another parameter." << std::endl;
             break;
