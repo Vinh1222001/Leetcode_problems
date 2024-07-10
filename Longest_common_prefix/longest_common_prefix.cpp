@@ -1,4 +1,4 @@
-#include "../main.h"
+#include "../main.hpp"
 
 string longestCommonPrefix(vector<string>& strs) {
     string result="";

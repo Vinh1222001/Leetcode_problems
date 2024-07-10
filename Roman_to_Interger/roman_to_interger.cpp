@@ -1,4 +1,4 @@
-#include "../main.h"
+#include "../main.hpp"
 
 int baseRomanToInt(char s){
     if(s == 'I') return 1;

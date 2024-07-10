@@ -66,5 +66,6 @@ The table below contain Problem information. You can find out their ID, Problem 
 |   3       |Roman to interger          |Easy               |3 ms (Beats 92.49% of users)   |9.19 MB (Beats 99.96% of users)    |
 |   4       |Two sum                    |Easy               |433 ms (Beats 5.02% of users)  |12.66 MB (Beats 73.63% of users)   |
 |   5       |Valid Parentheses          |Easy               |3 ms (Beats 41.9% of users)    |7.50 MB (Beats 85.89% of users)    |
-|   6     | Merge two sorted lists      |Esay |5ms(Beats 48.88% of users)|18.5 MB (Beats 13.86% of users)|
+|   6     | Merge two sorted lists      |Esay |5 ms (Beats 48.88% of users)|18.5 MB (Beats 13.86% of users)|
 |   7   |   Add two numbers |   Medidum |   15 ms (Beats 87.82%)    |    76.06 MB (Beats 63.45%)   |
+|   8   |   Longest substring without repeating characters| Medium  |   60 ms (Beats 11.25%)    |    9.08MB (Beats 97.53%)   |

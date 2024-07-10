@@ -1,4 +1,4 @@
-#include "../main.h"
+#include "../main.hpp"
 
 void addNewNodes(ListNode* list, int value){
     if(list == nullptr) {
@@ -13,7 +13,7 @@ void addNewNodes(ListNode* list, int value){
     }
 
     walker->next = new ListNode(value);
-    
+    return;
 }
 
 void printListNode(ListNode* list){

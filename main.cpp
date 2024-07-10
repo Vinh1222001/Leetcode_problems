@@ -1,4 +1,4 @@
-#include "main.h"
+#include "main.hpp"
 
 int main(int argc, char *argv[]){
 
@@ -29,6 +29,10 @@ int main(int argc, char *argv[]){
 
         case VIEW_ADD_TWO_NUMBERS:
             problem.test_AddTwoNumber();
+            break;
+            
+        case VIEW_LONGEST_SUBSTRING_WITHOUT_REPEATING_CHARACTERS:
+            problem.test_lengthOfLongestSubstring();
             break;
             
         default:

@@ -5,6 +5,7 @@ import Palindrome_number.test as PalindromeNumberTest
 import Roman_to_Interger.test as RomanToIntergerTest
 import Valid_Parentheses.test as ValidParenthesesTest
 import Add_Two_Number.test  as AddTwoNumberTest
+import Longest_Substring_Without_Repeating_Characters.test as LongestSubstringWithoutRepeatingCharactersTest
 
 import unittest
 import subprocess
@@ -24,7 +25,8 @@ problem_dic={
     4:TwoSumTest.testCase,
     5:ValidParenthesesTest.testCase,
     6:MergeTwoListsTest.testCase,
-    7:AddTwoNumberTest.testCase
+    7:AddTwoNumberTest.testCase,
+    8:LongestSubstringWithoutRepeatingCharactersTest.testCase
 }
 
 class TestMainProgram(unittest.TestCase):

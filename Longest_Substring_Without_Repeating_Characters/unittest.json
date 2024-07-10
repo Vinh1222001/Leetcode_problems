@@ -1,0 +1,54 @@
+{
+    "problem": {
+        "id":"8",
+        "name":"Longest substring without repeating characters",
+        "unittest":{
+            "test_case_len": 7,
+            "test_cases":[
+                {
+                    "input":{
+                        "s": "abcabcbb"
+                    },
+                    "output":"3"
+                },
+                {
+                    "input":{
+                        "s": "bbbbb"
+                    },
+                    "output":"1"
+                },
+                {
+                    "input":{
+                        "s": "pwwkew"
+                    },
+                    "output":"3"
+                },
+                {
+                    "input":{
+                        "s": ""
+                    },
+                    "output":"0"
+                },
+                {
+                    "input":{
+                        "s": " "
+                    },
+                    "output":"1"
+                },
+                {
+                    "input":{
+                        "s": "aa"
+                    },
+                    "output":"1"
+                },
+                {
+                    "input":{
+                        "s": "au"
+                    },
+                    "output":"2"
+                }
+                
+            ]
+        }
+    }
+}

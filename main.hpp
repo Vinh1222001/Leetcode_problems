@@ -23,6 +23,8 @@ using namespace std;
 
     #define VIEW_ADD_TWO_NUMBERS                7
 
+    #define VIEW_LONGEST_SUBSTRING_WITHOUT_REPEATING_CHARACTERS 8
+
 #pragma endregion
 
 struct ListNode {
@@ -37,19 +39,21 @@ class Solution
     // private:
     public:
 
-        void        test_TwoSum();
+        void test_TwoSum();
         // int         romanToInt(string s);
-        void        test_RomanToInterger();
+        void test_RomanToInterger();
         // bool        isPalindrome(int x);
-        void        test_PalindromeNumber();
+        void test_PalindromeNumber();
         // string      longestCommonPrefix(vector<string>& strs);
-        void        test_LongestCommonPrefix();
+        void test_LongestCommonPrefix();
         // bool        isValid(string s);
-        void        test_ValidParentheses();
+        void test_ValidParentheses();
         // ListNode*   mergeTwoLists(ListNode* list1, ListNode* list2);
-        void        test_MergeTwoLists();
+        void test_MergeTwoLists();
 
-        void        test_AddTwoNumber();
+        void test_AddTwoNumber();
+
+        void test_lengthOfLongestSubstring();
         Solution(/* args */){}
         ~Solution(){}
 };
